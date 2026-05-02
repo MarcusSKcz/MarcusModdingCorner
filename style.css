@@ -1,0 +1,151 @@
+/*BASE*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1a2b4a;
+}
+
+/* Navbar things */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 48px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #1a2b4a;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a2b4a;
+}
+/* nav ul = <ul> inside <nav> */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #1a2b4a;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #F5A623;
+}
+
+/* hero page  */
+.hero {
+    text-align: center;
+    padding: 80px 48px;
+    background-color: #f0f4ff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+    color: #1a2b4a;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 32px;
+    color: #555;
+}
+
+/* ===== BUTTONS ===== */
+.button {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #1a2b4a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: #F5A623;
+    color: #1a2b4a;
+}
+
+.button-gold {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #F5A623;
+    color: #1a2b4a;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.button-gold:hover {
+    background-color: #1a2b4a;
+    color: #ffffff;
+}
+
+/* Card stuff */
+.cards {
+    display: flex;
+    gap: 24px;
+    padding: 48px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 24px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #1a2b4a;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    flex-grow: 1;
+}
+
+
+.page-header {
+    padding: 48px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.page-header h1 {
+    font-size: 36px;
+    color: #1a2b4a;
+}
+
+
+footer {
+    text-align: center;
+    padding: 24px;
+    background-color: #1a2b4a;
+    color: #ffffff;
+    margin-top: 48px;
+}
