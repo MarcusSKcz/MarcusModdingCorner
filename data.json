@@ -1,0 +1,52 @@
+{
+  "emulators": [
+    {
+      "name": "Duckstation",
+      "platform": "PlayStation 1",
+      "details": {
+        "version": "0.1-6450",
+        "status": "Stable",
+        "requirements": {
+          "cpu": "Dual Core 2.0GHz",
+          "ram": "4GB"
+        }
+      }
+    },
+    {
+      "name": "PCSX2",
+      "platform": "PlayStation 2",
+      "details": {
+        "version": "Nightly 1.7.5500",
+        "status": "Active Dev",
+        "requirements": {
+          "cpu": "Quad Core 3.0GHz",
+          "ram": "8GB"
+        }
+      }
+    },
+    {
+      "name": "RPCS3",
+      "platform": "PlayStation 3",
+      "details": {
+        "version": "0.0.30",
+        "status": "Active Dev",
+        "requirements": {
+          "cpu": "6+ Core CPU",
+          "ram": "16GB"
+        }
+      }
+    },
+    {
+      "name": "PPSSPP",
+      "platform": "PSP",
+      "details": {
+        "version": "1.17.1",
+        "status": "Stable",
+        "requirements": {
+          "cpu": "Any modern Dual Core",
+          "ram": "2GB"
+        }
+      }
+    }
+  ]
+}
