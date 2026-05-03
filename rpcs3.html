@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus' Modding Corner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="JavaScript/burger.js"></script>
+</head>
+<body>
+
+<header>
+<nav>
+    <div class="burger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <a href="index.html" class="logo">Marcus' Modding Corner</a>
+    <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="guides.html" class="nav-link">Guides</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="emulation.html" class="nav-link active">Emulation</a></li>
+        <li><a href="underthehood.html" class="nav-link">Under the Hood</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+</nav>
+</header>
+
+<main>
+<section class="page-header">
+    <h1>RPCS3</h1>
+    <p>The leading open-source PlayStation 3 emulator, making rapid strides in compatibility.</p>
+</section>
+
+<section class="guide-content">
+    <h2>What is RPCS3</h2>
+    <p>RPCS3 is an open-source PS3 emulator that has made remarkable progress in recent years. Originally considered impossible due to the PS3's complex Cell processor architecture, it now runs thousands of games with playable to perfect compatibility.</p>
+
+    <h2>Key Features</h2>
+    <p>Vulkan and OpenGL renderer support. Resolution scaling for sharper visuals. SPU and PPU recompiler for near-native performance on supported titles. Active development with frequent updates improving compatibility and performance.</p>
+
+    <h2>Recommended Specs</h2>
+    <p>RPCS3 is CPU-heavy due to PS3 SPU emulation. A 6 core or more CPU is strongly recommended — more cores directly improves performance. 16GB of RAM minimum. A modern GPU with Vulkan support. Clock speed matters less than core count for this emulator.</p>
+
+    <h2>Recommended Settings</h2>
+    <p>Set SPU decoder to LLVM Recompiler. Enable SPU loop detection. Set SPU block size to Mega for best performance. Enable Write Color Buffers for games that have graphical issues without it. Use Approximate ZCULL occlusion queries to improve framerate. Always check the RPCS3 compatibility wiki for per-game settings.</p>
+
+    <a href="https://rpcs3.net/" target="_blank" class="button-gold">Download RPCS3</a>
+</section>
+</main>
+
+<footer>
+    <p>© 2025 Marcus' Modding Corner</p>
+</footer>
+
+</body>
+</html>

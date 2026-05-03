@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus' Modding Corner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="JavaScript/burger.js"></script>
+</head>
+<body>
+
+<header>
+<nav>
+    <div class="burger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <a href="index.html" class="logo">Marcus' Modding Corner</a>
+    <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="guides.html" class="nav-link">Guides</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="emulation.html" class="nav-link active">Emulation</a></li>
+        <li><a href="underthehood.html" class="nav-link">Under the Hood</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+</nav>
+</header>
+
+<main>
+<section class="page-header">
+    <h1>PCSX2</h1>
+    <p>The industry standard PlayStation 2 emulator with massive game compatibility.</p>
+</section>
+
+<section class="guide-content">
+    <h2>What is PCSX2</h2>
+    <p>PCSX2 is the most mature and widely used PS2 emulator available. With over 20 years of development behind it, it supports over 95% of the PS2 library and offers powerful enhancement features that take classic games well beyond their original quality.</p>
+
+    <h2>Key Features</h2>
+    <p>Internal resolution scaling up to 8x native, bringing PS2 games to 4K quality. Widescreen and no-interlacing patches built in. Texture filtering, anti-aliasing and anisotropic filtering support. Per-game settings for maximum compatibility.</p>
+
+    <h2>Recommended Specs</h2>
+    <p>A quad core CPU running at 3.0GHz or higher is recommended. 8GB of RAM minimum. A dedicated GPU with Vulkan support will give the best results. More demanding games like God of War benefit from stronger hardware.</p>
+
+    <h2>Recommended Settings</h2>
+    <p>Use the QT version of PCSX2 as it is the actively developed build. Set renderer to Vulkan. Enable mipmapping and trilinear filtering. For demanding games enable the EE cycle rate at -1 to reduce CPU load. Use per-game settings for titles with known issues.</p>
+
+    <a href="https://pcsx2.net/" target="_blank" class="button-gold">Download PCSX2</a>
+</section>
+</main>
+
+<footer>
+    <p>© 2025 Marcus' Modding Corner</p>
+</footer>
+
+</body>
+</html>
