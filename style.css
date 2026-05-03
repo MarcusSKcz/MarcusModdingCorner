@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*  TODO: try rems */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background-color: #ffffff;
@@ -62,7 +62,7 @@ nav ul {
     color: #555;
 }
 
-/* ===== BUTTONS ===== */
+/* For BUTTONS */
 .button {
     display: inline-block;
     padding: 12px 28px;
@@ -93,7 +93,7 @@ nav ul {
     color: #ffffff;
 }
 
-/* Card stuff */
+/* Cards */
 .cards {
     display: flex;
     gap: 24px;
@@ -148,4 +148,129 @@ footer {
     background-color: #1a2b4a;
     color: #ffffff;
     margin-top: 48px;
+}
+
+/* tags */
+.tag {
+    display: inline-block;
+    background-color: #1a2b4a;
+    color: #ffffff;
+    padding: 4px 10px; /* Change for rem    */
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* For the whole gallery */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 48px;
+    justify-content: center;
+}
+
+.gallery-grid a {
+    display: block;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Emulation Table */
+.emulation-table {
+    padding: 48px;
+}
+
+.emulation-table h2 {
+    margin-bottom: 24px;
+    color: #1a2b4a;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th { /* table Header*/
+    background-color: #1a2b4a;
+    color: #ffffff;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+table td { /*Table Data*/
+    padding: 12px 16px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+table tr:hover { /*table row*/
+    background-color: #f0f4ff;
+}
+
+/* ===== CONTACT FORM ===== */
+.contact-form {
+    max-width: 600px;
+    margin: 48px auto;
+    padding: 0 24px;
+}
+
+.form-group {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #1a2b4a;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1a2b4a;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+}
+
+.button-gold[type="submit"] {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    padding: 14px;
 }
