@@ -32,7 +32,7 @@ header::after {
 .logo {
     font-size: 20px;
     font-weight: 700;
-    color: #1a2b4a;
+    color: #F5A623;
 }
 /* nav ul = <ul> inside <nav> */
 nav ul {
@@ -72,6 +72,29 @@ nav ul {
 .hero p {
     font-size: 18px;
     margin-bottom: 32px;
+    color: #555;
+}
+
+.features {
+    display: flex;
+    gap: 24px;
+    padding: 48px;
+    justify-content: center;
+}
+
+.feature {
+    text-align: center;
+    max-width: 280px;
+}
+
+.feature h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #1a2b4a;
+}
+
+.feature p {
+    font-size: 14px;
     color: #555;
 }
 
@@ -191,6 +214,38 @@ footer {
     font-weight: 600;
 }
 
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge.hard {
+    background-color: #ffe0e0;
+    color: #c0392b;
+}
+
+.badge.medium {
+    background-color: #fff3e0;
+    color: #e67e22;
+}
+
+.badge.easy {
+    background-color: #e0f7e9;
+    color: #27ae60;
+}
+
+.badge.active {
+    background-color: #e0f0ff;
+    color: #2980b9;
+}
+
+.section-alt {
+    background-color: #f8f9fa;
+}
+
 /* For the whole gallery */
 .gallery-grid {
     display: flex;
@@ -201,11 +256,30 @@ footer {
 }
 
 .gallery-grid a {
+    position: relative;
     display: block;
     width: 300px;
     height: 200px;
     overflow: hidden;
     border-radius: 8px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(26, 43, 74, 0.8);
+    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    font-size: 13px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-grid a:hover .caption {
+    opacity: 1;
 }
 
 .gallery-grid img {

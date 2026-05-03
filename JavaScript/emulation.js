@@ -18,10 +18,10 @@ fetch("data.json")
             let row = document.createElement("tr");
 
             // Fill the row with data from the JSON
-            row.innerHTML = "<td>" + emulators[i].name + "</td>" +
+            row.innerHTML = "<td><a href='" + emulators[i].details.website + "' target='_blank'>" + emulators[i].name + "</a></td>" +
                 "<td>" + emulators[i].platform + "</td>" +
                 "<td>" + emulators[i].details.version + "</td>" +
-                "<td>" + emulators[i].details.status + "</td>";
+                "<td><span class='badge " + (emulators[i].details.status === "Stable" ? "easy" : "active") + "'>" + emulators[i].details.status + "</span></td>";
 
             // Add the row to the table
             tbody.appendChild(row);
