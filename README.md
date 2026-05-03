@@ -1,5 +1,3 @@
-This is my website for the subject Web Technologies & Design. It's a website about my modding shenanigans.
-
 # Marcus' Modding Corner
 
 A web portal about console modding and emulation built for the Web Technologies & Design course.
